@@ -1,0 +1,64 @@
+/* Bootstrap */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+/* Custom styles */
+:root {
+    --discord-primary: #5865F2;
+    --discord-dark: #2C2F33;
+    --discord-gray: #36393F;
+    --discord-light: #DCDDDE;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Discord Style Buttons */
+.btn-discord {
+    background-color: var(--discord-primary);
+    color: white;
+    border: none;
+}
+
+.btn-discord:hover {
+    background-color: #4752C4;
+    color: white;
+}
+
+/* Card Styles */
+.card-product {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.card-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Badge Styles */
+.badge-destacado {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.badge-nuevo {
+    background-color: #28a745;
+}
+
+/* Navbar Custom */
+.navbar-discord {
+    background-color: var(--discord-dark);
+}
+
+.navbar-discord .navbar-brand,
+.navbar-discord .nav-link {
+    color: var(--discord-light) !important;
+}
+
+.navbar-discord .nav-link:hover {
+    color: var(--discord-primary) !important;
+}

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "spatie/laravel-permission": "^6.22",
+        "spatie/laravel-medialibrary": "^11.17"
+    }
+}
