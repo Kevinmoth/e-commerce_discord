@@ -92,7 +92,7 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav">
-    @guest
+    @guest <!-- @guest es equivalente a @if(!Auth::check()) -->
         <li class="nav-item">
             <a class="nav-link" href="{{ url('/login') }}">Iniciar Sesión</a>
         </li>
@@ -110,7 +110,7 @@
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
                 <i class="bi bi-person-circle"></i> {{ Auth::user()->nombre }}
             </a>
-            <ul class="dropdown-menu dropdown-menu-end">
+            <ul class="dropdown-menu dropdown-menu-end"> <!-- dropdown-menu es la clase por defecto apra desplegables de boostrap -->
                 <li><a class="dropdown-item" href="{{ url('/dashboard') }}">Mi Panel</a></li>
                 <li><a class="dropdown-item" href="{{ url('/mis-licencias') }}">Mis Licencias</a></li>
                 <li><a class="dropdown-item" href="{{ url('/mis-pedidos') }}">Mis Pedidos</a></li>
@@ -123,7 +123,7 @@
                 </li>
             </ul>
         </li>
-    @endguest
+    @endguest <!-- @endguest cierra el bloque iniciado con @guest , basicamente es como un condicional-->
 </ul>
             </div>
         </div>
@@ -131,7 +131,7 @@
 
     <!--  Contenido Principal -->
     <main class="py-4">
-        @yield('content')
+        @yield('content') <!-- aca se inyecta el codigo que generico que proramamos en el archivo blade de la pagina especifica -->
     </main>
 
     <!-- Footer -->

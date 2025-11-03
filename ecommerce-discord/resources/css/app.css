@@ -2,7 +2,7 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
-/* Discord-like Theme */
+/* Paleta de colores sacada de la home de discord */
 :root {
     --discord-primary: #5865F2;
     --discord-dark: #2C2F33;
@@ -55,7 +55,7 @@ body {
     transform: translateY(-1px);
 }
 
-/* Cards */
+/* Para las tarjetas de inicio y carrucel*/
 .card-product {
     background-color: var(--discord-bg);
     color: var(--discord-light);
@@ -81,7 +81,7 @@ body {
     color: #fff;
 }
 
-/* Headings */
+/* los headings */
 h1, h2, h5 {
     color: white;
 }

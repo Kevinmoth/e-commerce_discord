@@ -4,7 +4,7 @@
 
 @section('content')
 <div class="container">
-    <!-- Hero Section -->
+    <!-- Hero panel -->
     <div class="row mb-5">
         <div class="col-12 text-center py-5 bg-gradient rounded" style="background: linear-gradient(135deg, #5865F2 0%, #4752C4 100%);">
             <h1 class="display-4 text-white fw-bold mb-3">DC componentes</h1>
@@ -13,7 +13,7 @@
         </div>
     </div>
 
-    <!-- Categorías -->
+    <!-- Categorias -->
     <div class="row mb-5">
         <div class="col-12 mb-4">
             <h2 class="text-center">Categorías</h2>
@@ -50,7 +50,7 @@
         </div>
     </div>
 
-    <!-- Productos Destacados (placeholder) -->
+    <!-- Productos en carrucel (placeholder) -->
     <div class="row">
         <div class="col-12 mb-4">
             <h2 class="text-center">Productos</h2>
