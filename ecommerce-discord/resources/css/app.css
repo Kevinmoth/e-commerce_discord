@@ -2,56 +2,26 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
-/* Custom styles */
+/* Discord-like Theme */
 :root {
     --discord-primary: #5865F2;
     --discord-dark: #2C2F33;
-    --discord-gray: #36393F;
-    --discord-light: #DCDDDE;
+    --discord-gray: #23272A;
+    --discord-light: #99AAB5;
+    --discord-bg: #36393F;
 }
 
+/* General */
 body {
     font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f8f9fa;
+    background-color: var(--discord-gray);
+    color: var(--discord-light);
 }
 
-/* Discord Style Buttons */
-.btn-discord {
-    background-color: var(--discord-primary);
-    color: white;
-    border: none;
-}
-
-.btn-discord:hover {
-    background-color: #4752C4;
-    color: white;
-}
-
-/* Card Styles */
-.card-product {
-    transition: transform 0.2s, box-shadow 0.2s;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.card-product:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* Badge Styles */
-.badge-destacado {
-    background-color: #ffc107;
-    color: #000;
-}
-
-.badge-nuevo {
-    background-color: #28a745;
-}
-
-/* Navbar Custom */
+/* Navbar */
 .navbar-discord {
     background-color: var(--discord-dark);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 
 .navbar-discord .navbar-brand,
@@ -61,4 +31,57 @@ body {
 
 .navbar-discord .nav-link:hover {
     color: var(--discord-primary) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--discord-primary), #4752C4);
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Discord Buttons */
+.btn-discord {
+    background-color: var(--discord-primary);
+    color: white;
+    border: none;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-discord:hover {
+    background-color: #4752C4;
+    transform: translateY(-1px);
+}
+
+/* Cards */
+.card-product {
+    background-color: var(--discord-bg);
+    color: var(--discord-light);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+
+.card-product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Badges */
+.badge-destacado {
+    background-color: #faa61a;
+    color: #fff;
+}
+
+.badge-nuevo {
+    background-color: #43b581;
+    color: #fff;
+}
+
+/* Headings */
+h1, h2, h5 {
+    color: white;
 }

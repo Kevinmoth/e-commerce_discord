@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'E-commerce Discord')</title>
-    
+    <title>@yield('title', 'DC componentes')</title>
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 {{-- 
@@ -74,7 +74,7 @@
     <nav class="navbar navbar-expand-lg navbar-discord">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-                <i class="bi bi-discord"></i> E-commerce Discord
+                <i class="bi bi-discord"></i> DC componentes
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -137,7 +137,7 @@
     <!-- Footer -->
     <footer class="bg-dark text-white mt-5 py-4">
         <div class="container text-center">
-            <p class="mb-0">&copy; 2025 E-commerce Discord. Todos los derechos reservados.</p>
+            <p class="mb-0">&copy; 2025 DC componentes {VERSION DE DESARROLLO}.</p>
         </div>
     </footer>
 
